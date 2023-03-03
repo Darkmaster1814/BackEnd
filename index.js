@@ -11,9 +11,8 @@ class ProductManager {
     } 
     //Method para revisar si alguno de los productos existe en el array return true si existe
     productExist(code) {
-        let exist = false; //se inicia como que no existe y si existe se vuelve true
-        this.#products.forEach((product) => {
-            if (product.code === code) exist = true;
+        let exist=this.#products.some((product) => {
+            return (product.code === code) 
         });
         return exist;
     } 
