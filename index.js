@@ -17,16 +17,16 @@ const test = async () => {
             stock: 25,
         };
         //Obtener productos
-        console.log("Obteniendo productos",await productos.getProducts());
+        console.log("Obteniendo productos", await productos.getProducts());
         //Agregar un producto
         await productos.addProduct(productoPrueba);
         //Buscar por ID
-        console.log("El producto con ID:1 ",await productos.getProductById(1));
+        console.log("El producto con ID:1 ", await productos.getProductById(1));
         //Agregar el mismo producto
         await productos.addProduct(productoPrueba);
-        console.log("Obteniendo productos",await productos.getProducts());
+        console.log("Obteniendo productos", await productos.getProducts());
         //Buscar por ID que no existe
-        console.log("El producto con ID:2 (que no existe) ",await productos.getProductById(2));
+        console.log("El producto con ID:2 (que no existe) ", await productos.getProductById(2));
         //Agregando un segundo producto
         await productos.addProduct({
             title: "producto2",
@@ -34,7 +34,8 @@ const test = async () => {
             price: 200,
             thumbnail: "Sin imagen",
             code: "abc124",
-            stock: 25,});
+            stock: 25,
+        });
         console.log("Despues de agregar un producto", await productos.getProducts());
         //Actualizando un producto que existe
         await productos.updateProduct(1, {
@@ -43,38 +44,18 @@ const test = async () => {
             price: 200,
             thumbnail: "Sin imagen",
             code: "abc123",
-            stock: 25,});
+            stock: 25,
+        });
         console.log("Despues de actualizar el producto ID: 1", await productos.getProducts());
         //Eliminando un producto
         console.log("Despues de agregar un producto ID:1", await productos.deleteProduct(1));
         productos.deleteProduct(2);
     } catch (error) {
-        console.log("ERROR:", error); 
+        console.log("ERROR:", error);
     }
 };
 
-function main(){
-test();
+function main() {
+    test();
 }
 main();
-
-
-
-
-/* 
-
-
-console.log("Actualizando un producto");
-productoPrueba = {
-    title: "producto1 Actualizado",
-    description: "Este producto es una prueba",
-    price: 200,
-    thumbnail: "Sin imagen",
-    code: "abc123",
-    stock: 25,
-};
-
-console.log(productos.getProducts());
-console.log("Eliminando un producto");
-productos.deleteProduct(2);
-console.log(productos.getProducts()); */
