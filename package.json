@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Darkmaster1814/BackEnd/issues"
   },
-  "homepage": "https://github.com/Darkmaster1814/BackEnd#readme"
+  "homepage": "https://github.com/Darkmaster1814/BackEnd#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

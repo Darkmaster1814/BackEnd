@@ -4,20 +4,20 @@ export default class ProductManager {
     constructor(path) {
         this.#path = path;
     }
-    //Getter del array de productos
-    getProducts = async () => {
-        const products = [];
-        //Corroborar si existe el archivo de lo contrario regresa arreglo vacio
-        if (fs.existsSync(this.#path)) {
-            //Leemos documento desde el archivo json luego lo pasamos a string para guardaro en el arreglo products
-            const data = await fs.promises.readFile(this.#path, 'utf-8'); //leemos
-            const products = JSON.parse(data); //Convertimos de JSON a String y guardamos
-            return products;
-        } else { //Si el path no existe(no hay archivo) regresa error
-            console.log("ERROR:Not file found");
-            return products;
+        //Getter del array de productos por numero de productos
+        getProducts = async (numberProducts) => {
+            const products = [];
+            //Corroborar si existe el archivo de lo contrario regresa arreglo vacio y corroborar si el number of products
+            if (fs.existsSync(this.#path)) {
+                //Leemos documento desde el archivo json luego lo pasamos a string para guardaro en el arreglo products
+                const data = await fs.promises.readFile(this.#path, 'utf-8'); //leemos
+                const products = JSON.parse(data); //Convertimos de JSON a String y guardamos
+                return products;
+            } else { //Si el path no existe(no hay archivo) regresa error
+                console.log("ERROR:Not file found");
+                return [];
+            }
         }
-    }
     //Method para revisar si alguno de los productos existe en el array return true si existe
     productExist = (products, code) => {
         let exist = products.some((product) => {
