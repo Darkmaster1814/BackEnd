@@ -1,0 +1,122 @@
+[
+	{
+		"id": 1,
+		"title": "Producto 1",
+		"description": "Este producto es una prueba",
+		"price": 200,
+		"thumbnail": "Sin imagen",
+		"code": "abc2",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 2,
+		"title": "Producto 2",
+		"description": "Este producto es una prueba",
+		"price": 200,
+		"thumbnail": "Sin imagen",
+		"code": "abc2",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 3,
+		"title": "Producto 3",
+		"description": "Este producto es una prueba",
+		"price": 300,
+		"thumbnail": "Sin imagen",
+		"code": "abc3",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 4,
+		"title": "Producto 4",
+		"description": "Este producto es una prueba",
+		"price": 400,
+		"thumbnail": "Sin imagen",
+		"code": "abc4",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 5,
+		"title": "Producto 5",
+		"description": "Este producto es una prueba",
+		"price": 500,
+		"thumbnail": "Sin imagen",
+		"code": "abc5",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 6,
+		"title": "Producto 6",
+		"description": "Este producto es una prueba",
+		"price": 600,
+		"thumbnail": "Sin imagen",
+		"code": "abc6",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 7,
+		"title": "Producto 7",
+		"description": "Este producto es una prueba",
+		"price": 700,
+		"thumbnail": "Sin imagen",
+		"code": "abc7",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 8,
+		"title": "Producto 8",
+		"description": "Este producto es una prueba",
+		"price": 800,
+		"thumbnail": "Sin imagen",
+		"code": "abc8",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 9,
+		"title": "Producto 9",
+		"description": "Este producto es una prueba",
+		"price": 900,
+		"thumbnail": "Sin imagen",
+		"code": "abc9",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 10,
+		"title": "Producto 10",
+		"description": "Este producto es una prueba",
+		"price": 1000,
+		"thumbnail": "Sin imagen",
+		"code": "abc10",
+		"stock": "25",
+		"status": true
+	},
+	{
+		"id": 11,
+		"title": "Producto 10",
+		"description": "Este producto es una prueba",
+		"price": 1000,
+		"thumbnail": "Sin imagen",
+		"code": "abc11",
+		"stock": 25,
+		"status": true
+	},
+	{
+		"id": 12,
+		"price": 1000,
+		"stock": 11,
+		"title": "Producto 1",
+		"description": "Este producto es una prueba",
+		"thumbnail": "Sin imagen",
+		"code": "abc12",
+		"status": true
+	}
+]
